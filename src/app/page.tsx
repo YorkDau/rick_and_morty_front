@@ -1,9 +1,11 @@
-import styles from './page.module.css'
+import Characters from "@/components/characters";
+import Header from "@/components/header";
 
-export default function Home() {
+export default async function Home() {
   return (
-    <main className={styles.main}>
-      persons
+    <main>
+      <Header/>
+      <Characters/>
     </main>
-  )
+  );
 }
